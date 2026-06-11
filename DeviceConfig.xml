@@ -1,0 +1,313 @@
+<?xml version="1.0"?>
+
+<!--
+	Default configurations 
+-->
+<device name="default">
+  <attributes>
+    <int name="menu_car_lod"                     value="3"             />
+    <int name="gameplay_car_lod"                 value="3"             />
+    <int name="skid_marks_trail_length"          value="24"            />
+    <int name="nitro_trail_length"               value="6"             />
+    <bool name="draw_interior_in_gameplay"       value="true"          />
+    <bool name="use_dynamic_screen_ratio"        value="false"         />
+    <bool name="use_adrenaline_nitro"            value="true"          />
+    <bool name="use_one_car_model"               value="false"         />
+    <bool name="use_car_morph_mesh"              value="true"         />
+    <bool name="use_full_sounds"                 value="true"          />
+    <bool name="use_render_target_aa"            value="false"         />
+    <bool name="use_msaa"                        value="true"         />
+    <bool name="use_real_physic_crash"           value="true"         />
+    <bool name="use_car_shadow"                  value="true"         />
+    <bool name="use_radial_blur_on_nitro"        value="true"         />
+    <bool name="use_blur_on_impact"              value="false"         />
+    <bool name="use_hires_map"                   value="true"          />
+	<bool name="use_hud_low_res_texture"		 value="false"         />
+    <bool name="use_menu_high_res_texture"       value="true"          />
+    <bool name="use_menu_ultra_res_texture"      value="false"         />
+    <bool name="use_orientation_locked"          value="false"         />
+    <bool name="use_traffic_shadow"              value="true"         />
+    <bool name="use_set_min_filter_linear"        value="true"         />
+    <bool name="use_swf_posteffect_render_texture" value="true"         />
+    <bool name="use_factor_color"                value="true"         />
+    <bool name="is_low_res_platform"             value="false"         />
+    <bool name="use_glLive_iPad"                 value="false"         />
+    <bool name="use_splitScreen"	             value="true"         />
+    <float name="gameplay_far_clip"              value="1000000.0"      />
+    <float name="gameplay_ref_clip"              value="100000.0"      /> 
+    <float name="devicefactorlod"                value="0.4f"          />
+    <float name="render_target_screen_ratio"     value="1.0"           />
+    <float name="a_lod_table_none"               value="225000000.0"   />
+    <float name="a_lod_table_box"                value="125000000.0"    />
+    <float name="a_lod_table_low"                value="85000000.0"     />
+    <float name="a_pickup_visibility_multiplier" value="2.25"           />
+    <float name="car_particle_multiplier"        value="1.0f"          />
+    <float name="near_clip_distance"             value="5.0"           />
+    <float name="crash_amplitude_modifier"       value="1.0"           />
+	<float name="use_particle_rate_pct"          value="100.0"         />
+    <bool name="use_lodev_textures"              value="false"         />
+    <string name="showTrackLowLODDistance"       value="FAR"			  />
+    <string name="igp_tracking_name"             value="A7WN"		/>
+	<int name="game_ggi"             			 value="53325"          />
+    <int name="map_mipmap_skip_count"            value="0"			/>
+    <bool name="use_high_quality_car_shader"     value="true"          />
+	<bool name="use_gamma_luminance"			 value="true"		   />
+	<bool name="use_second_render_target"		 value="true"			/>
+	<bool name="use_quantization"		 		 value="false"			/>
+	<bool name="use_low_audio_effect"		 	 value="false"			/><!-- enable/disable enhanced 3d / reverb effect -->
+	<float name="ReflectionMapU"				 value="0.46875"		/><!-- Dynamic Reflection Shader U coordinate to take for the relfection -->
+	<float name="ReflectionMapV"				 value="0.3125"			/><!-- Dynamic Reflection Shader V coordinate to take for the relfection -->
+	<int name="use_fps_limit"					 value="1"				/>
+	<bool name="use_dynamic_reflection_on_cars"	 value="false"			/><!-- Special case for low device, ignore on high end one -->
+  <bool name="optimize_dynamic_reflection"	 		 value="false"			/><!-- Skip one frame on two -->
+	<bool name="draw_car_reflection_garage"		 value="true"			/>
+	<bool name="use_ipad_camera_roll"		 value="false"			/>
+    <bool name="use_black_and_white_effect"	             value="true"  />
+    <bool name="use_commlib_receiver_thread_for_bluetooth"	             value="false"  />
+	<int name="game_ggi_tnb"             			 value="53324"          />
+  </attributes>
+</device>
+
+<!--
+	Medium class devices
+-->
+<device name="medium" parent="default">
+  <attributes>
+    <bool name="use_msaa"                      value="false"         />
+    <bool name="use_car_shadow"                 value="false"         />
+    <bool name="use_radial_blur_on_nitro"         value="false"         />
+    <bool name="use_menu_high_res_texture"        value="false"         />
+    <bool name="use_orientation_locked"         value="true"         />
+    <bool name="use_traffic_shadow"             value="false"         />
+    <bool name="use_set_min_filter_linear"        value="false"         />
+    <bool name="use_swf_posteffect_render_texture" value="false"         />
+    <bool name="is_low_res_platform"             value="true"         />
+    <bool name="use_glLive_iPad"                value="false"         />
+    <float name="a_lod_table_box"                value="27500000.0"    />
+    <float name="a_lod_table_low"                value="15000000.0"     />
+    <float name="a_pickup_visibility_multiplier" value="1.0"           />
+	<string name="showTrackLowLODDistance"		value="MEDIUM"		  />
+	<bool name="use_gamma_luminance"			 value="false"		   />
+	<bool name="use_second_render_target"		 value="false"			/>
+  </attributes>
+</device>
+
+<!--
+	Low class devices
+-->
+<device name="low" parent="medium">
+  <attributes>
+    <int name="menu_car_lod"                     value="2"             />
+    <int name="gameplay_car_lod"                 value="2"             />
+    <float name="a_lod_table_none"               value="200000000.0"   />
+    <float name="a_lod_table_box"                value="25000000.0"    />
+    <float name="a_lod_table_low"                value="10240000.0"     />
+    <bool name="use_hires_map"         		value="false"         />
+    <float name="devicefactorlod"             value="-1.0"          />
+    <float name="use_particle_rate_pct"          value="50.0"         />
+	<bool name="use_lodev_textures"				value="true"         />
+	<string name="showTrackLowLODDistance"		value="CLOSE"		  />	
+	<bool name="use_high_quality_car_shader"     value="false"          />
+	<bool name="use_low_audio_effect"		 	 value="true"/><!-- enable/disable enhanced 3d / reverb effect -->
+	<bool name="use_splitScreen"	             value="false"         />
+	<bool	name="optimize_dynamic_reflection"		value="false"	/>
+	<bool name="draw_car_reflection_garage"		 value="false"			/>
+    <bool name="use_black_and_white_effect"	             value="false"  />
+  </attributes>
+</device>
+
+<!--
+	High class devices
+-->
+<device name="high" parent="default">
+</device>
+
+
+
+
+<!--
+	Low devices implementation
+-->
+<device name="ipod_1G" parent="low">
+</device>
+
+<device name="ipod_2G" parent="low">
+</device>
+
+<device name="iphone_1G" parent="low">
+</device>
+
+<device name="iphone_3G" parent="low">
+</device>
+
+<device name="iphone_3GS" parent="low">
+</device>
+
+<device name="iphone_4" parent="low">
+	<attributes>
+		<bool name="use_hud_low_res_texture"      value="true"	/>
+		<bool name="use_menu_high_res_texture"    value="true"	/>
+		<bool	name="use_dynamic_reflection_on_cars"	value="true"	/>
+    <bool name="use_black_and_white_effect"	             value="true"  />
+	</attributes>
+</device>
+
+<device name="iphone_4S" parent="high">
+	<attributes>
+		<bool name="use_orientation_locked"         value="true"         />
+		<bool name="use_commlib_receiver_thread_for_bluetooth"             value="true"  />
+	</attributes>
+</device>
+
+<device name="iphone_unknown" parent="medium">
+</device>
+
+<device name="ipod_3G" parent="low">
+</device>
+
+<device name="ipod_4G" parent="low">
+	<attributes>
+		<bool name="use_hud_low_res_texture"			value="true"	/>
+		<bool name="use_menu_high_res_texture"			value="true"	/>
+	</attributes>
+</device>
+
+<device name="ipod_unkown" parent="low">
+</device>
+
+<device name="ipad_1" parent="low">
+	<attributes>
+		<bool	name="use_hud_low_res_texture"			value="true"	/>
+		<bool	name="use_menu_high_res_texture"		value="true"	/>
+		<bool	name="use_menu_low_res_alpha_texture"	value="true"	/>
+		<bool	name="use_hires_map"         			value="false"	/>
+		<string	name="igp_tracking_name"				value="AS7I"	/>
+		<bool	name="use_glLive_iPad"					value="true"	/>
+		<bool name="use_ipad_camera_roll"		 		value="true"	/>
+  </attributes>
+</device>
+
+
+
+
+<!--
+	High devices implementation
+-->
+<device name="ipad_2" parent="high">
+  <attributes>
+    <string name="igp_tracking_name"			value="AS7I"		/>
+    <bool name="use_glLive_iPad"          value="true"         />
+  </attributes>
+</device>
+
+<device name="ipad_3" parent="high">
+  <attributes>
+	  <float name="render_target_screen_ratio"  value="0.707106781"   /> <!-- 0.707106781 ratio of half the screen pixels (sqrt(y*y/2)) -->
+  	<bool name="use_menu_ultra_res_texture"		value="true"        />
+    <string name="igp_tracking_name"			value="AS7I"		/>
+    <bool name="use_glLive_iPad"              	value="true"         />
+	<float name="ReflectionMapU"				value="0.3400"		/><!-- Dynamic Reflection Shader U coordinate to take for the relfection -->
+	<float name="ReflectionMapV"				value="0.2000"		/><!-- Dynamic Reflection Shader V coordinate to take for the relfection -->
+	<int name="use_fps_limit"					value="90"			/>
+
+
+  
+  </attributes>
+</device>
+
+<device name="win32" parent="high">
+</device>
+
+<device name="win32Simulator" parent="high">
+</device>
+
+<device name="android" parent="medium">
+</device>
+
+<device name="unknown" parent="high">
+  <attributes>
+    <string name="igp_tracking_name"			value="AS7I"		/>
+    <bool name="use_glLive_iPad"          value="true"         />
+  </attributes>
+</device>
+
+<device name="wp_1" parent="high">
+  <attributes>
+	<int name="use_fps_limit"					value="90"			/>
+  </attributes>
+</device>
+
+<device name="wp_2" parent="high">
+  <attributes>
+	<int name="use_fps_limit"					value="90"			/>
+  </attributes>
+</device>
+
+<device name="wp_3" parent="high">
+  <attributes>
+	<int name="use_fps_limit"					value="90"			/>
+  </attributes>
+</device>
+
+<device name="win_1" parent="default">
+  <attributes>
+    <bool name="use_msaa"                      value="false"         />
+    <bool name="use_car_shadow"                 value="false"         />
+    <bool name="use_radial_blur_on_nitro"         value="false"         />
+    <bool name="use_hud_low_res_texture"      value="false"	/>
+    <bool name="use_menu_ultra_res_texture"		value="true"        />
+    <bool name="use_orientation_locked"         value="true"         />
+    <bool name="use_traffic_shadow"             value="false"         />
+    <bool name="use_set_min_filter_linear"        value="false"         />
+    <bool name="use_swf_posteffect_render_texture" value="false"         />
+    <bool name="is_low_res_platform"             value="false"         />
+    <float name="a_pickup_visibility_multiplier" value="1.0"           />
+	  <string name="showTrackLowLODDistance"		value="MEDIUM"		  		/>
+	  <bool name="use_gamma_luminance"			 value="false"		   />
+    <bool name="use_hires_map"         		value="true"         />
+    <bool name="use_low_audio_effect"		 	 value="true"/>
+    <float name="use_particle_rate_pct"          value="50.0"         />
+	  <bool name="use_second_render_target"		 value="false"			/>
+    <float name="a_lod_table_box"                value="27500000.0"    />
+    <float name="a_lod_table_low"                value="15000000.0"     />
+	<int name="use_fps_limit"					value="90"			/>
+  </attributes>
+</device>
+
+<device name="win_2" parent="low">
+  <attributes>
+    <bool name="use_hud_low_res_texture"      value="false"	/>
+    <bool name="use_menu_high_res_texture"    value="true"	/>
+    <bool	name="use_dynamic_reflection_on_cars"	value="true"	/>
+    <bool name="use_black_and_white_effect"	             value="true"  />
+    <int name="menu_car_lod"                     value="3"             />
+    <int name="gameplay_car_lod"                 value="3"             />
+    <float name="a_lod_table_none"               value="225000000.0"   />
+    <float name="a_lod_table_box"                value="125000000.0"    />
+    <float name="a_lod_table_low"                value="85000000.0"     />
+    <string name="showTrackLowLODDistance"       value="FAR"			  />
+    <float name="render_target_screen_ratio"     value="1.0"           />
+	<int name="use_fps_limit"					value="90"			/>
+  </attributes>
+</device>
+
+<device name="win_3" parent="high">
+  <attributes>
+    <bool name="use_menu_ultra_res_texture"		value="true"        />
+    <int name="use_fps_limit"					value="90"			/>
+  </attributes>
+</device>
+
+<device name="win_4" parent="high">
+  <attributes>
+    <bool name="use_menu_ultra_res_texture"		value="true"        />
+    <int name="use_fps_limit"					value="90"			/>
+  </attributes>
+</device>
+
+<device name="win_5" parent="high">
+  <attributes>
+    <bool name="use_menu_ultra_res_texture"		value="true"        />
+    <int name="use_fps_limit"					value="90"			/>
+  </attributes>
+</device>
