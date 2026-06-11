@@ -13,5 +13,5 @@ Once you have located it you'll have to change the owner of the file to "Users" 
 
 On the GAMELOFTSA.Asphalt7Heat_1.0.2.2_x64__0pp20fcewvvtj folder you should also find the .exe of the game.
 
-This DeviceConfig.xml only changes " <int name="use_fps_limit"					value="90"			/> " from "value="40" to value="90" and the "<int name="use_fps_limit"					 value="1"				/>" from value="-1" to value="1"
+## This DeviceConfig.xml only changes " <int name="use_fps_limit"					value="90"			/> " from "value="40" to value="90" and the "<int name="use_fps_limit"					 value="1"				/>" from value="-1" to value="1"
 
